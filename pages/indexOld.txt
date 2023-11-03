@@ -1,0 +1,36 @@
+{/* Hero */}
+      <section id="home">
+        {/* Nav */}
+        <Navbar />
+        <Hero details={page.pageDetails} />
+      </section>
+
+      {/* About Us */}
+      <section id="about-us" className=" bg-dark-blue-900 text-gray-400 py-36">
+        <AboutUs details={page.pageDetails} />
+      </section>
+
+      {/* Services */}
+      <section id="services"  className="bg-blue-950 text-gray-400 py-36">
+        <Services details={page.pageDetails} />
+      </section>
+
+      {/* Clients */}
+      <section id="client-list" className=" bg-dark-blue-900 text-gray-400 py-36">
+        <ClientList />
+      </section>
+
+      {/* Blog */}
+      <section id="blog-list" className=" bg-blue-950 text-gray-400 py-36">
+        <BlogList />
+      </section>
+
+      {/* Contact */}
+      <section id="contcat-us" className=" bg-blue-950 text-gray-400 py-36">
+        <Contact />
+      </section>
+
+      {/* Footer */}
+      <section id="contcat-us" className="bg-dark-blue-800 text-gray-400 py-8">
+        <Footer />
+      </section>
