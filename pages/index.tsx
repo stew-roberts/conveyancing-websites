@@ -64,6 +64,20 @@ const query = gql`
             fontAwesomeIconName
           }
         }
+        ... on CarouselSectionRecord {
+          __typename
+          id
+          title
+          description
+          carouselItems {
+            title
+            alt
+            image {
+              id
+              url
+            }
+          }
+        }
         ... on TextWithImageRecord {
           __typename
           id

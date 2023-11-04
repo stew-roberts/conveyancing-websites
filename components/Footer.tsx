@@ -18,17 +18,19 @@ function Footer({}: Props) {
               </div>
               <div className="flex-col w-96">
                 <h3 className="text-xs py-4">Contact Us</h3>
-                <p className="text-xs">Technical Property Ltd<br />Conveyancing Websites<br />71-75 Shelton Street<br />Convent Garden<br />London WC2H 9JQ</p>
+                <p className="text-xs"><span className='font-bold'>Conveyancing Websites</span><br />Technical Property Ltd<br />71-75 Shelton Street<br />Convent Garden<br />London WC2H 9JQ</p>
               </div>
               <div className="flex-col w-96">
                 <h3 className="text-xs py-4">Fine Print</h3>
-                <p className="text-xs"># In relation to content changes, these are subject to fair a use policy and a maximum of 1 hour per day. Items for project delivery are once we have any and all required content to start a build. Any new content items received will be classed as a content change from your package.</p>
+                <p className="text-xs">+ Items for project delivery are once we have any and all required content to start a build. Any new content items received will be classed as a content change from your package.</p>
+                <p className="text-xs">++ In relation to content changes, these are subject to fair a use policy and a maximum of 1 hour per day.</p>
+                <p className="text-xs">^ Additional Monthly cost for each item.</p>
               </div>
             </div>
         </div>
         <div className="border-t mt-8">
           <div className="container mx-auto pt-12 pb-4">
-            <p className="text-xs text-center">Conveyancing Websites &copy; {new Date().getFullYear()}</p>
+            <p className="text-xs text-center">Owned and operated by <a href="https://www.technicalproperty.co.uk" target="_blank">Technical Property Limited</a> &copy; {new Date().getFullYear()}</p>
           </div>
         </div>
     </div>

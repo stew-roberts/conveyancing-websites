@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-scroll'
 
 function PricingCard({title, details, points, price, priceSuffix, priceCurrency, featured, buttonText}) {
   return (
@@ -13,7 +14,7 @@ function PricingCard({title, details, points, price, priceSuffix, priceCurrency,
                     ))}
                 </ul>
                 <p className="text-sm text-center text-base-600 font-bold">{price}/{priceSuffix}</p><span className="text-[8px] text-base-600 px-2">{priceCurrency}</span>
-                <a className="text-base-600 border border-base-600 rounded-full w-24 text-center m-8 hover:text-white hover:bg-base-600 hover:cursor-pointer text-xs font-bold px-4 py-1" href="#contact-us">{buttonText}</a>
+                <Link className="cursor-pointer text-base-600 border border-base-600 rounded-full w-24 text-center m-8 hover:text-white hover:bg-base-600 hover:cursor-pointer text-xs font-bold px-4 py-1" to="contact-us" smooth={true} duration={500}>{buttonText}</Link>
             </div>
         </div>
     </div>

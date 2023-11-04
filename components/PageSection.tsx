@@ -4,6 +4,7 @@ import Timeline from './Timeline'
 import Features from './Features'
 import ImageWithText from './ImageWithText'
 import PricingSection from './PricingSection'
+import Carousel from './Carousel'
 
 const PageSection = ({section}) => {
     if (section.__typename === 'HeroRecord') {
@@ -12,6 +13,8 @@ const PageSection = ({section}) => {
         return <Features details={section} />
     } else if (section.__typename === 'TimelineSectionRecord') {
         return <Timeline details={section} />
+    } else if (section.__typename === 'CarouselSectionRecord') {
+        return <Carousel details={section} />
     } else if (section.__typename === 'TextWithImageRecord') {
         return (
             <div className="bg-slate-100 pt-24 pb-12" id="our-features">
